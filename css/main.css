@@ -276,35 +276,238 @@ textarea {
 
 /*=================== Main content ==========================*/
 
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700';
+@font-face {
+    font-family: DIN;
+    src: url(../fonts/DIN.woff);
+}
+
 * {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: DIN;
+}
+
+
+/*
+#def0fb,
+#56c3e7,
+#227fc3,
+#145273,
+#0a1c27,
+#2d1726,
+#471427,
+#a62d2e,
+#f3c736,
+#f5f2b4,
+*/
+
+@keyframes colorchange {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: #def0fb;
+    }
+    20% {
+        background-color: #56c3e7;
+    }
+    30% {
+        background-color: #227fc3;
+    }
+    40% {
+        background-color: #145273;
+    }
+    50% {
+        background-color: #0a1c27;
+    }
+    60% {
+        background-color: #2d1726;
+    }
+    70% {
+        background-color: #471427;
+    }
+    80% {
+        background-color: #a62d2e;
+    }
+    90% {
+        background-color: #f3c736;
+    }
+    100% {
+        background-color: #f5f2b4;
+    }
 }
 
 @keyframes bgAnimate {
     from {
-        background-position: 50% 44%, 48% -85%;
+        background-position: 50% 20%, 50% -85%;
     }
     to {
-        background-position: 50% 44%, 52% -85%;
+        background-position: 50% 80%, 50% -85%;
     }
 }
 
 .full-screen-content {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     background-color: black;
-    background-image: url(../img/background1.svg), url(../img/background3.svg);
+    /*animation: colorchange 10s;*/
+    /*background-image: url(../img/background1.svg), url(../img/background3.svg);*/
     /*background-position: 50% 37%, 50% 50%;*/
-    background-position: 50% 41%, 50% -85%;
-    background-size: 123% 285vh, 117% 95vh;
-    /*animation: bgAnimate 5s linear infinite;*/
+    /*background-position: 50% 41%, 50% -85%;*/
+    /*background-size: 123% 285vh, 117% 95vh;*/
+    /*animation: bgAnimate 60s linear infinite;*/
+}
+
+.first-landing {
+    position: relative;
+}
+
+.form-strings {
+    position: relative;
+}
+
+.cbg {
+    width: 100%;
+}
+
+.ctext {
+    width: 63%;
+    top: -9vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.c0 {
+    position: absolute;
+    left: 22%;
+    width: 141%;
+    /*top:-22px;
+    left: 8%;*/
+}
+
+.c1 {
+    position: absolute;
+    left: 30%;
+    width: 141%;
+}
+
+.c2 {
+    width: 141%;
+    left: 29%;
+    position: relative;
 }
 
 .cascade-home {
-    font-size: 9rem;
+    font-size: 2rem;
     position: absolute;
-    top: 11.7%;
+    z-index: 100;
+    top: 62%;
     width: 100%;
     text-align: center;
+    color: #dce0df;
+    text-shadow: 0px 1px 12px rgb(31, 31, 31);
+}
+
+.button-to-form {
+    background-color: black;
     color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 61%;
+    padding: 11px 57px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
+}
+
+.button-to-form:hover {
+    background-color: white;
+    color: black;
+}
+
+.f-div-1 {
+    position: absolute;
+    top: 107px;
+    left: 9%;
+    width: 29%;
+}
+
+.f-div-2 {
+    position: absolute;
+    top: 102vw;
+    right: 4%;
+    width: 29%;
+}
+
+.f-div-3 {
+    position: absolute;
+    top: 145vw;
+    left: 9%;
+    width: 29%;
+}
+
+form label {
+    color: #dce0df;
+}
+
+form [type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 1px
+}
+
+[type=color]:focus,
+[type=date]:focus,
+[type=datetime-local]:focus,
+[type=datetime]:focus,
+[type=email]:focus,
+[type=month]:focus,
+[type=number]:focus,
+[type=password]:focus,
+[type=search]:focus,
+[type=tel]:focus,
+[type=text]:focus,
+[type=time]:focus,
+[type=url]:focus,
+[type=week]:focus,
+textarea:focus {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px white;
+    border-color: white;
+    color: white;
+}
+
+legend {
+    color: #dce0df
+}
+
+fieldset{
+    margin-bottom: 20px;
+}
+
+.form-header {
+    font-size: 1.3em;
+    margin: .67em 0;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 33px;
 }
