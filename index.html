@@ -30,28 +30,30 @@
             <img class="c0" src="img/c0.svg"></img>
             <img class="c1" src="img/c1.svg"></img>
             <img class="c2" src="img/c2.svg"></img>
-            <form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+{window.location.href ='./complete.html';}"></iframe>
+            <form autocomplete="off" action="https://docs.google.com/forms/d/1HLwm_PdS-9FSrMzBIdFoZDMl6BeTGOhtxphDn30gEPM/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="f-div-1">
                     <h1 class="form-header">Personal Information</h1>
                     <label>
                         Name
-                        <input type="text">
+                        <input type="text" name="Attendees Application">
                     </label>
                     <label>
                         Age
-                        <input type="text">
+                        <input type="text" name="Attendees Application">
                     </label>
                     <label>
                         Address
-                        <input type="text">
+                        <input type="text" name="Attendees Application">
                     </label>
                     <label>
                         Occupation
-                        <input type="text">
+                        <input type="text" name="Attendees Application">
                     </label>
                     <label>
                         National ID
-                        <input type="text">
+                        <input type="text" name="Attendees Application">
                     </label>
                     <label>
                         Mobile Number
@@ -102,6 +104,7 @@
                         What do you expect from this event?
                         <textarea></textarea>
                     </label>
+                    <input type="submit" name="submit" class="button submit-btn" value="Submit">
                 </div>
             </form>
         </div>

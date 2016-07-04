@@ -12,21 +12,21 @@ $(function() {
             if (nowScrollTop > lastScrollTop) {
                 // ACTION ON
                 // SCROLLING DOWN 
-                console.log(lastScrollTop);
-                var prop = 'translateY(' + -lastScrollTop + ')';
-                $c1.css({
-                    '-webkit-transform': prop,
-                    '-moz-transform': prop,
-                    '-ms-transform': prop,
-                    '-o-transform': prop,
-                    'transform': prop
+                // console.log(lastScrollTop);
+                // var prop = 'translateY(' + -lastScrollTop + ')';
+                // $c1.css({
+                //     '-webkit-transform': prop,
+                //     '-moz-transform': prop,
+                //     '-ms-transform': prop,
+                //     '-o-transform': prop,
+                //     'transform': prop
 
-                });
+                // });
 
             } else {
                 // ACTION ON
                 // SCROLLING UP 
-                console.log('up');
+                // console.log('up');
             }
             lastScrollTop = nowScrollTop;
         }

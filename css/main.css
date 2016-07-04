@@ -472,7 +472,8 @@ textarea {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-radius: 1px
+    border-radius: 1px;
+    color:white;
 }
 
 [type=color]:focus,
@@ -510,4 +511,12 @@ fieldset{
     color: white;
     margin-top: 0;
     margin-bottom: 33px;
+}
+.submit-btn{
+        background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0px;
+    margin-top: 72px;
+    padding: 7px 34px;
 }
