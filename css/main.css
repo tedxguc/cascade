@@ -614,21 +614,24 @@ input:disabled {
         position: absolute;
         top: 107px;
         left: 9%;
-        width: 65%;
+        width: 69%;
         background-color: rgba(0, 0, 0, 0.48);
+        padding: 11px;
     }
     .f-div-2 {
         position: absolute;
         top: 978px;
         left: 9%;
-        width: 65%;
+        width: 69%;
         background-color: rgba(0, 0, 0, 0.48);
+        padding: 11px;
     }
     .f-div-3 {
         position: absolute;
         top: 1346px;
         left: 9%;
-        width: 65%;
+        width: 69%;
         background-color: rgba(0, 0, 0, 0.48);
+        padding: 11px;
     }
 }
