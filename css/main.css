@@ -299,6 +299,42 @@ textarea {
 #f5f2b4,
 */
 
+@-webkit-keyframes colorchange {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: #def0fb;
+    }
+    20% {
+        background-color: #56c3e7;
+    }
+    30% {
+        background-color: #227fc3;
+    }
+    40% {
+        background-color: #145273;
+    }
+    50% {
+        background-color: #0a1c27;
+    }
+    60% {
+        background-color: #2d1726;
+    }
+    70% {
+        background-color: #471427;
+    }
+    80% {
+        background-color: #a62d2e;
+    }
+    90% {
+        background-color: #f3c736;
+    }
+    100% {
+        background-color: #f5f2b4;
+    }
+}
+
 @keyframes colorchange {
     0% {
         background-color: black;
@@ -335,6 +371,15 @@ textarea {
     }
 }
 
+@-webkit-keyframes bgAnimate {
+    from {
+        background-position: 50% 20%, 50% -85%;
+    }
+    to {
+        background-position: 50% 80%, 50% -85%;
+    }
+}
+
 @keyframes bgAnimate {
     from {
         background-position: 50% 20%, 50% -85%;
@@ -349,12 +394,6 @@ textarea {
     width: 100%;
     overflow-x: hidden;
     background-color: black;
-    /*animation: colorchange 10s;*/
-    /*background-image: url(../img/background1.svg), url(../img/background3.svg);*/
-    /*background-position: 50% 37%, 50% 50%;*/
-    /*background-position: 50% 41%, 50% -85%;*/
-    /*background-size: 123% 285vh, 117% 95vh;*/
-    /*animation: bgAnimate 60s linear infinite;*/
 }
 
 .first-landing {
@@ -374,7 +413,8 @@ textarea {
     top: -9vw;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .c0 {
@@ -398,7 +438,7 @@ textarea {
 }
 
 .cascade-home {
-    font-size: 2rem;
+    font-size: 1.4rem;
     position: absolute;
     z-index: 100;
     top: 62%;
@@ -413,13 +453,15 @@ textarea {
     color: white;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     top: 61%;
     padding: 11px 57px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5rem;
     border: 1px solid white;
+    -webkit-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
     transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
 }
 
@@ -523,6 +565,7 @@ fieldset {
     border: 1px solid white;
     border-radius: 0px;
     margin-top: 72px;
+    margin-bottom: 10px;
     padding: 7px 34px;
 }
 
@@ -542,12 +585,12 @@ input[disabled] {
     border-color: #212121;
 }
 
-.submitted-successfully{
+.submitted-successfully {
     border-color: green!important;
-    color:green!important;
+    color: green!important;
 }
 
-.cr-1{
+.cr-1 {
     width: 14.2%;
     background-color: #b6e3f0;
     position: absolute;
@@ -555,69 +598,76 @@ input[disabled] {
     display: inline-block;
     display: none;
     top: -1px;
-    left:85.8%;
+    left: 85.8%;
 }
-.cr-2{
+
+.cr-2 {
     width: 10.3%;
     background-color: #56c3e7;
     position: absolute;
     height: 100vh;
     display: inline-block;
     display: none;
-    left:75.5%;
+    left: 75.5%;
     top: -1px;
 }
-.cr-3{
+
+.cr-3 {
     width: 12.3%;
     background-color: #227fc3;
     position: absolute;
     height: 100vh;
     display: inline-block;
     display: none;
-    left:63.2%;
+    left: 63.2%;
     top: -1px;
 }
-.cr-4{
+
+.cr-4 {
     width: 14%;
-    background-color: #145273;
+    background-color: #0a1c27;
     position: absolute;
     height: 100vh;
     display: inline-block;
     display: none;
-    left:49.2%;
+    left: 49.2%;
     top: -1px;
 }
-.cr-5{
+
+.cr-5 {
     width: 10.6%;
     background-color: #471427;
     position: absolute;
     height: 100vh;
     display: inline-block;
     display: none;
-    left:38.6%;
+    left: 38.6%;
     top: -1px;
 }
-.cr-6{
+
+.cr-6 {
     width: 14.1%;
     background-color: #a62d2e;
     position: absolute;
     height: 100vh;
     display: inline-block;
     display: none;
-    left:24.5%;
+    left: 24.5%;
     top: -1px;
 }
-.cr-7{
+
+.cr-7 {
     width: 12.2%;
     background-color: #f3c736;
     position: absolute;
     height: 100vh;
     display: inline-block;
     display: none;
-    left:12.3%;
+    left: 12.3%;
     top: -1px;
 }
-.cr-8{
+
+.cr-8 {
     width: 12.3%;
     background-color: #f5f2b4;
     position: absolute;
@@ -625,4 +675,36 @@ input[disabled] {
     display: inline-block;
     display: none;
     top: -1px;
+}
+
+textarea:disabled,
+input:disabled {
+    background-color: transparent;
+    cursor: default;
+    color: grey;
+    border-color: #034e03;
+}
+
+@media screen and (max-width: 670px) {
+    .f-div-1 {
+        position: absolute;
+        top: 107px;
+        left: 9%;
+        width: 65%;
+        background-color: rgba(0, 0, 0, 0.48);
+    }
+    .f-div-2 {
+        position: absolute;
+        top: 978px;
+        left: 9%;
+        width: 65%;
+        background-color: rgba(0, 0, 0, 0.48);
+    }
+    .f-div-3 {
+        position: absolute;
+        top: 1346px;
+        left: 9%;
+        width: 65%;
+        background-color: rgba(0, 0, 0, 0.48);
+    }
 }
