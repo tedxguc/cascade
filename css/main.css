@@ -276,13 +276,9 @@ textarea {
 
 /*=================== Main content ==========================*/
 
-@font-face {
-    font-family: DIN;
-    src: url(../fonts/DIN.woff);
-}
-
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 * {
-    font-family: DIN;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -299,99 +295,9 @@ textarea {
 #f5f2b4,
 */
 
-@-webkit-keyframes colorchange {
-    0% {
-        background-color: black;
-    }
-    10% {
-        background-color: #def0fb;
-    }
-    20% {
-        background-color: #56c3e7;
-    }
-    30% {
-        background-color: #227fc3;
-    }
-    40% {
-        background-color: #145273;
-    }
-    50% {
-        background-color: #0a1c27;
-    }
-    60% {
-        background-color: #2d1726;
-    }
-    70% {
-        background-color: #471427;
-    }
-    80% {
-        background-color: #a62d2e;
-    }
-    90% {
-        background-color: #f3c736;
-    }
-    100% {
-        background-color: #f5f2b4;
-    }
-}
-
-@keyframes colorchange {
-    0% {
-        background-color: black;
-    }
-    10% {
-        background-color: #def0fb;
-    }
-    20% {
-        background-color: #56c3e7;
-    }
-    30% {
-        background-color: #227fc3;
-    }
-    40% {
-        background-color: #145273;
-    }
-    50% {
-        background-color: #0a1c27;
-    }
-    60% {
-        background-color: #2d1726;
-    }
-    70% {
-        background-color: #471427;
-    }
-    80% {
-        background-color: #a62d2e;
-    }
-    90% {
-        background-color: #f3c736;
-    }
-    100% {
-        background-color: #f5f2b4;
-    }
-}
-
-@-webkit-keyframes bgAnimate {
-    from {
-        background-position: 50% 20%, 50% -85%;
-    }
-    to {
-        background-position: 50% 80%, 50% -85%;
-    }
-}
-
-@keyframes bgAnimate {
-    from {
-        background-position: 50% 20%, 50% -85%;
-    }
-    to {
-        background-position: 50% 80%, 50% -85%;
-    }
-}
-
 .full-screen-content {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     background-color: black;
 }
@@ -414,7 +320,7 @@ textarea {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .c0 {
@@ -446,6 +352,7 @@ textarea {
     text-align: center;
     color: #dce0df;
     text-shadow: 0px 1px 12px rgb(31, 31, 31);
+    font-weight: 400;
 }
 
 .button-to-form {
@@ -454,7 +361,7 @@ textarea {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     top: 61%;
     padding: 11px 57px;
     text-transform: uppercase;
@@ -567,6 +474,7 @@ fieldset {
     margin-top: 72px;
     margin-bottom: 10px;
     padding: 7px 34px;
+    max-width: 100%;
 }
 
 .error-in-form {
@@ -586,8 +494,15 @@ input[disabled] {
 }
 
 .submitted-successfully {
+    border: 1px solid white;
+    border-radius: 0px;
+    margin-top: 72px;
+    margin-bottom: 10px;
     border-color: green!important;
     color: green!important;
+    padding: 7px 34px;
+    max-width: 100vw;
+    display: none;
 }
 
 .cr-1 {

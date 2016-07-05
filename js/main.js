@@ -53,8 +53,8 @@ $(function() {
     });
 
     $('#hidden_iframe').one('load', function(event) {
-        $('.submit-btn').addClass('submitted-successfully');
-        $('.submit-btn').attr('value','Submitted Successfully, We will get back to you soon through your Email. Thank you!');
+        $('.submit-btn').hide('fast');
+        $('.submitted-successfully').show('fast');
         $("input").prop('disabled', true);
         $("textarea").prop('disabled', true);
         $("select").prop('disabled', true);
