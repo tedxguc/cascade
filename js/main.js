@@ -1,4 +1,7 @@
 $(function() {
+
+    $(document).foundation();
+
     var lastScrollTop = 0,
         delta = 5;
 
@@ -30,5 +33,31 @@ $(function() {
             }
             lastScrollTop = nowScrollTop;
         }
+    });
+
+    var textarea = document.querySelector('textarea');
+    textarea.addEventListener('keydown', autosize);
+
+    function autosize() {
+        var el = this;
+        setTimeout(function() {
+            el.style.cssText = 'height:auto; padding:0';
+            el.style.cssText = '-moz-box-sizing:content-box';
+            el.style.cssText = 'height:' + (el.scrollHeight + 3) + 'px';
+        }, 0);
+    }
+    var submitted = false;
+    $('form').one('submit', function() {
+        var submitted = true;
+        $('.submit-btn').prop('disabled', true);
+    });
+
+    $('#hidden_iframe').one('load', function(event) {
+        $('.submit-btn').addClass('submitted-successfully');
+        $('.submit-btn').attr('value','Submitted Successfully!');
+        $('.cr').css({
+        	display: 'inline-block',
+        });
+        console.log("success");
     });
 });

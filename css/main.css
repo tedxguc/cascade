@@ -473,7 +473,11 @@ textarea {
     border-left: 0;
     border-right: 0;
     border-radius: 1px;
-    color:white;
+    color: white;
+}
+
+textarea {
+    resize: none;
 }
 
 [type=color]:focus,
@@ -501,7 +505,7 @@ legend {
     color: #dce0df
 }
 
-fieldset{
+fieldset {
     margin-bottom: 20px;
 }
 
@@ -512,11 +516,113 @@ fieldset{
     margin-top: 0;
     margin-bottom: 33px;
 }
-.submit-btn{
-        background-color: transparent;
+
+.submit-btn {
+    background-color: transparent;
     color: white;
     border: 1px solid white;
     border-radius: 0px;
     margin-top: 72px;
     padding: 7px 34px;
+}
+
+.error-in-form {
+    color: #a90401;
+    margin-top: 42px;
+    margin-bottom: -45px;
+    border: 1px solid red;
+    padding: 1px 9px;
+    text-align: center;
+}
+
+input[disabled] {
+    cursor: default!important;
+    color: #656565;
+    background-color: transparent;
+    border-color: #212121;
+}
+
+.submitted-successfully{
+    border-color: green!important;
+    color:green!important;
+}
+
+.cr-1{
+    width: 14.2%;
+    background-color: #b6e3f0;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    top: -1px;
+    left:85.8%;
+}
+.cr-2{
+    width: 10.3%;
+    background-color: #56c3e7;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    left:75.5%;
+    top: -1px;
+}
+.cr-3{
+    width: 12.3%;
+    background-color: #227fc3;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    left:63.2%;
+    top: -1px;
+}
+.cr-4{
+    width: 14%;
+    background-color: #145273;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    left:49.2%;
+    top: -1px;
+}
+.cr-5{
+    width: 10.6%;
+    background-color: #471427;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    left:38.6%;
+    top: -1px;
+}
+.cr-6{
+    width: 14.1%;
+    background-color: #a62d2e;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    left:24.5%;
+    top: -1px;
+}
+.cr-7{
+    width: 12.2%;
+    background-color: #f3c736;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    left:12.3%;
+    top: -1px;
+}
+.cr-8{
+    width: 12.3%;
+    background-color: #f5f2b4;
+    position: absolute;
+    height: 100vh;
+    display: inline-block;
+    display: none;
+    top: -1px;
 }

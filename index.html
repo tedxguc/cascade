@@ -30,83 +30,97 @@
             <img class="c0" src="img/c0.svg"></img>
             <img class="c1" src="img/c1.svg"></img>
             <img class="c2" src="img/c2.svg"></img>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
-{window.location.href ='./complete.html';}"></iframe>
-            <form autocomplete="off" action="https://docs.google.com/forms/d/1HLwm_PdS-9FSrMzBIdFoZDMl6BeTGOhtxphDn30gEPM/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <form autocomplete="off" action="https://docs.google.com/forms/d/1HLwm_PdS-9FSrMzBIdFoZDMl6BeTGOhtxphDn30gEPM/formResponse" method="POST" target="hidden_iframe" data-abide>
                 <div class="f-div-1">
                     <h1 class="form-header">Personal Information</h1>
                     <label>
                         Name
-                        <input type="text" name="Attendees Application">
+                        <input type="text" name="entry.101209475" required>
                     </label>
                     <label>
                         Age
-                        <input type="text" name="Attendees Application">
+                        <input type="number" name="entry.408794089" required>
                     </label>
                     <label>
                         Address
-                        <input type="text" name="Attendees Application">
+                        <input type="text" name="entry.2053478638" required>
                     </label>
                     <label>
                         Occupation
-                        <input type="text" name="Attendees Application">
+                        <input type="text" name="entry.2134937386" required>
                     </label>
                     <label>
-                        National ID
-                        <input type="text" name="Attendees Application">
+                        National ID/Passport Number
+                        <input type="text" name="entry.1237777146" required>
                     </label>
                     <label>
                         Mobile Number
-                        <input type="text">
+                        <input type="text" name="entry.567242449" required pattern="number">
                     </label>
                     <label>
                         Email
-                        <input type="text">
+                        <input type="email" name="entry.326279531" required>
                     </label>
                     <label>
                         Facebook Account Link
-                        <input type="text">
+                        <input type="url" name="entry.2020618894">
                     </label>
                     <label>
                         What are your interests?
-                        <textarea></textarea>
+                        <textarea name="entry.118092668" required></textarea>
                     </label>
                 </div>
                 <div class="f-div-2">
                     <h1 class="form-header">Previous Experiences</h1>
                     <fieldset>
                         <legend>Have you attended a TEDx event before?</legend>
-                        <input type="radio" name="pokemon" value="yes" id="pokemonRed" required>
-                        <label for="pokemonRed">Yes</label>
-                        <input type="radio" name="pokemon" value="no" id="pokemonBlue">
-                        <label for="pokemonBlue">No</label>
+                        <input type="radio" name="entry.1999164615" value="Yes" id="tedx-yes" required>
+                        <label for="tedx-yes">Yes</label>
+                        <input type="radio" name="entry.1999164615" value="No" id="tedx-no">
+                        <label for="tedx-no">No</label>
                     </fieldset>
                     <label>
                         If yes, Name the event and critique it?
-                        <textarea></textarea>
+                        <textarea name="entry.1968144857"></textarea>
                     </label>
                 </div>
                 <div class="f-div-3">
                     <h1 class="form-header">General Information</h1>
                     <label>
                         What is a TEDx event?
-                        <textarea></textarea>
+                        <textarea name="entry.1657956408" required></textarea>
                     </label>
                     <label>
                         Why do you want to attend?
-                        <textarea></textarea>
+                        <textarea name="entry.869287274" required></textarea>
                     </label>
                     <label>
-                        Whats your favorite online TED talk?
-                        <input type="text">
+                        What's your favorite online TED talk?
+                        <input type="text" name="entry.1920662990" required>
+                    </label>
+                    <label>
+                        Why is it your favorite?
+                        <textarea name="entry.2129946610" required></textarea>
                     </label>
                     <label>
                         What do you expect from this event?
-                        <textarea></textarea>
+                        <textarea name="entry.128249440" required></textarea>
                     </label>
+                    <div data-abide-error class="alert callout error-in-form" style="display: none;">
+                        <p><i class="fi-alert"></i> There are some errors in your Application.</p>
+                    </div>
                     <input type="submit" name="submit" class="button submit-btn" value="Submit">
                 </div>
             </form>
+            <div class="cr cr-1"></div>
+            <div class="cr cr-2"></div>
+            <div class="cr cr-3"></div>
+            <div class="cr cr-4"></div>
+            <div class="cr cr-5"></div>
+            <div class="cr cr-6"></div>
+            <div class="cr cr-7"></div>
+            <div class="cr cr-8"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
