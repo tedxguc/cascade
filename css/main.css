@@ -284,6 +284,8 @@ textarea {
 
 body {
     overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 
@@ -305,6 +307,8 @@ body {
     width: 100vw;
     overflow-x: hidden;
     background-color: black;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .first-landing {
